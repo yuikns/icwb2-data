@@ -1,14 +1,15 @@
-icwb2-data
-###############################
+# icwb2-data
 
-ref: 
+**Source**:
+
 + [homepage](http://sighan.cs.uchicago.edu/bakeoff2005/)
 + [introduction by 52nlp](http://www.52nlp.cn/%E4%B8%AD%E6%96%87%E5%88%86%E8%AF%8D%E5%85%A5%E9%97%A8%E4%B9%8B%E8%B5%84%E6%BA%90)
+
 
 SIGHAN是国际计算语言学会（ACL）中文语言处理小组的简称，其英文全称为“Special Interest Group for Chinese Language Processing of the Association for Computational Linguistics”，又可以理解为“SIG汉“或“SIG漢“。而Bakeoff则是SIGHAN所主办的国际中文语言处理竞赛，第一届于2003年在日本札幌举行（Bakeoff 2003),第二届于2005年在韩国济州岛举行(Bakeoff 2005), 而2006年在悉尼举行的第三届（Bakeoff 2006）则在前两届的基础上加入了中文命名实体识别评测。目前SIGHAN Bakeoff已成功举办了6届，其中Bakeoff 2005的数据和结果在其主页上是完全免费和公开的，但是请注意使用的前提是非商业使用（non-commercial）:
 
 
-    The data and results for the 2nd International Chinese Word Segmentation Bakeoff are now available for non-commercial use.
+> The data and results for the 2nd International Chinese Word Segmentation Bakeoff are now available for non-commercial use.
 
 在Bakeoff 2005的主页上，我们可以找到如下一行：“The complete training, testing, and gold-standard data sets, as well as the scoring script, are available for research use”，在这一行下面提供了三个版本的icwb2-data。下载解压后，通过README就可以很清楚的了解到它包含哪些中文分词资源，特别需要说明的是这些中文分词语料库分别由台湾中央研究院（Academia Sinica）、香港城市大学（City University of Hong Kong）、北京大学(Peking University)及微软亚洲研究院（Microsoft Research）提供，其中前二者是繁体中文，后二者是简体中文,以下按照README简要介绍icwb2-data:
 
@@ -31,10 +32,10 @@ SIGHAN是国际计算语言学会（ACL）中文语言处理小组的简称，�
 
 文件包括扩展名”.txt”则其编码分别为（Files with the extension “.txt” are encoded as follows）:
 
-+ 前缀为as\_，代表的是台湾中央研究院提供，编码为Big Five (CP950)；
-+ 前缀为hk\_，代表的是香港城市大学提供，编码为Big Five/HKSCS；
-+ 前缀为msr\_，代表的是微软亚洲研究院提供，编码为 EUC-CN (CP936)；
-+ 前缀为pku\_，代表的北京大学提供，编码为EUC-CN (CP936)；
++ 前缀为 `as\_`，代表的是台湾中央研究院提供，编码为Big Five (CP950)；
++ 前缀为 `hk\_`，代表的是香港城市大学提供，编码为Big Five/HKSCS；
++ 前缀为 `msr\_`，代表的是微软亚洲研究院提供，编码为 EUC-CN (CP936)；
++ 前缀为 `pku\_`，代表的北京大学提供，编码为EUC-CN (CP936)；
 
 EUC-CN即是GB2312（EUC-CN is often called “GB” or “GB2312″ encoding, though technically GB2312 is a character set, not a character encoding.）
 
@@ -86,18 +87,17 @@ SIGHAN Bakeoff公开资源的一个重要意义在于这里提供了一个完全
 
 
 
--
+***以下是说明原文***
 
-**以下是说明原文**
 
-2nd International Chinese Word Segmentation Bakeoff - Data Release
-Release 1, 2005-11-18
+> 2nd International Chinese Word Segmentation Bakeoff - Data Release
+> Release 1, 2005-11-18
 
-* Introduction
+## Introduction
 
 This directory contains the training, test, and gold-standard data used in the 2nd International Chinese Word Segmentation Bakeoff. Also included is the script used to score the results submitted by the bakeoff participants and the simple segmenter used to generate the baseline and topline data.
 
-* File List
+## File List
 
 ```
 gold/       Contains the gold standard segmentation of the test data
@@ -112,7 +112,7 @@ training/   Contains the segmented training data.
 doc/        Contains the instructions used in the bakeoff.
 ```
 
-* Encoding Issues
+## Encoding Issues
 
 Files with the extension ".utf8" are encoded in UTF-8 Unicode.
 
@@ -125,7 +125,7 @@ Files with the extension ".txt" are encoded as follows:
 
 EUC-CN is often called "GB" or "GB2312" encoding, though technically GB2312 is a character set, not a character encoding.
 
-* Scoring
+## Scoring
 
 The script 'score' is used to generate compare two segmentations. The script takes three arguments:
 
@@ -140,11 +140,11 @@ script. For example:
 % perl scripts/score gold/cityu_training_words.utf8 gold/cityu_test_gold.utf8 test_segmentation.utf8 > score.ut8
 ```
 
-* Licensing
+## Licensing
 
 The corpora have been made available by the providers for the purposes of this competition only. By downloading the training and testing corpora, you agree that you will not use these corpora for any other purpose than as material for this competition. Petitions to use the data for any other purpose MUST be directed to the original providers of the data. Neither SIGHAN nor the ACL will assume any liability for a participant's misuse of the data.
 
-* Questions?
+## Question?
 
 Questions or comments about these data can be sent to Tom Emerson, tree@sighan.org.
 
