@@ -32,10 +32,10 @@ SIGHAN是国际计算语言学会（ACL）中文语言处理小组的简称，�
 
 文件包括扩展名”.txt”则其编码分别为（Files with the extension “.txt” are encoded as follows）:
 
-+ 前缀为 `as\_`，代表的是台湾中央研究院提供，编码为Big Five (CP950)；
-+ 前缀为 `hk\_`，代表的是香港城市大学提供，编码为Big Five/HKSCS；
-+ 前缀为 `msr\_`，代表的是微软亚洲研究院提供，编码为 EUC-CN (CP936)；
-+ 前缀为 `pku\_`，代表的北京大学提供，编码为EUC-CN (CP936)；
++ 前缀为 `as_`，代表的是台湾中央研究院提供，编码为 **Big Five (CP950)**；
++ 前缀为 `hk_`，代表的是香港城市大学提供，编码为 **Big Five/HKSCS**；
++ 前缀为 `msr_`，代表的是微软亚洲研究院提供，编码为 **EUC-CN (CP936)**；
++ 前缀为 `pku_`，代表的北京大学提供，编码为 **EUC-CN (CP936)**；
 
 EUC-CN即是GB2312（EUC-CN is often called “GB” or “GB2312″ encoding, though technically GB2312 is a character set, not a character encoding.）
 
